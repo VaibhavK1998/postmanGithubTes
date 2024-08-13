@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "1c22616a-743e-49d8-b82b-f2ddfb6d8753",
+		"name": "PostmanEchoApiTesting",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30806636",
+		"_collection_link": "https://lively-zodiac-934852.postman.co/workspace/Workspace1~21e088cb-1360-4aee-8997-b00851d549e9/collection/30806636-1c22616a-743e-49d8-b82b-f2ddfb6d8753?action=share&source=collection_link&creator=30806636"
+	},
+	"item": [
+		{
+			"name": "QueryParamPostEchoApi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/post?foo1=bar1",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "foo1",
+							"value": "bar1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QueryParamPostEchoApi Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/post?foo1=bar1",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "foo1",
+							"value": "bar1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestpayloadWithFormUrlEncoded",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "key1",
+							"value": "value1",
+							"type": "text"
+						},
+						{
+							"key": "key2",
+							"value": "value2",
+							"type": "text"
+						},
+						{
+							"key": "key3",
+							"value": "value3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://postman-echo.com/post",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "foo1",
+							"value": "bar1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
